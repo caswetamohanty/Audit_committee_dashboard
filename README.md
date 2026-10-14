@@ -2,7 +2,7 @@ Audit Committee Dashboard Generator;
 
 The interactive dashboard is for audit committee reporting: issue ratings, aging, owner-wise closure and repeat findings. Drop in an Excel or CSV export and get a stakeholder-ready dashboard in seconds, with no server, no install and no data upload.
 
-A single-file web tool (index.html) that reads an audit issue log (or any tabular export), works out what each column means, and builds KPI cards and charts automatically. Charts can then be edited, added or removed, and the result exported to Excel or PowerPoint for the audit committee pack.
+A single-file web tool (Audit committee dashboard.html) that reads an audit issue log (or any tabular export), works out what each column means, and builds KPI cards and charts automatically. Charts can then be edited, added or removed, and the result exported to Excel or PowerPoint for the audit committee pack.
 
 1. Problem statement
 Internal audit and compliance teams track findings in spreadsheets. Before every audit committee meeting someone has to rebuild the same view by hand: open issues by rating, status split, trend over time, which processes carry the most findings. This is repetitive, error-prone, and the data is often confidential, so pasting it into an online BI tool is not an option.
@@ -19,7 +19,7 @@ Export	Save as Excel (summary plus one sheet per chart) or PowerPoint (title, KP
 Audit-aware by design: risk ratings are ordered Critical → Low and coloured consistently; "Very High" and "Moderate" are mapped to Critical and Medium; status values such as Closed, Resolved, Remediated, Cancelled count as closed when computing % Open.
 
 3. Try it in 60 seconds
-Open index.html in a browser (or the live demo link above).
+Open Audit committee dashboard.html in a browser.
 Upload sample-data/audit_issues_sample.csv (or the .xlsx).
 You should see:
 Item	Result on the sample file
@@ -33,7 +33,7 @@ Doughnut	Status: 33 Closed, 11 Overdue, 9 In Progress, 7 Open
 Open the pencil icon on any chart (shown on hover) to change dimension, metric or Top-N, then use Save Dashboard to export.
 In the .xlsx sample, switch to the Control_Test_Results sheet using the dropdown at the top to see the tool adapt to a different structure and use Sum of Exceptions by Process.
 4. Synthetic data
-Everything in sample-data/ is fictional and generated for demonstration. No real client or company data is used.
+Everything in Demo-data/ is fictional and generated for demonstration. No real client or company data is used.
 
 File	Contents
 audit_issues_sample.csv	60 synthetic audit issues: ID, process, description, risk rating, status, dates, owner (role only), days open, repeat-finding flag
@@ -63,14 +63,13 @@ HTML, CSS and vanilla JavaScript in one file, with SheetJS 0.18.5, Chart.js 4.4.
 
 9. Repository structure
 .
-├── index.html                      # the tool (open directly in a browser)
-├── sample-data/
+├── Audit committee dashboard.html                      # the tool (open directly in a browser)
+├── Demo-data/
 │   ├── audit_issues_sample.csv     # synthetic audit issue log
 │   └── audit_issues_sample.xlsx    # same data + control test sheet
 ├── docs/
 │   ├── HOW_IT_WORKS.md             # detection and aggregation rules
-│   └── PROMPT_USED.md              # prompt and build approach
-├── LICENSE
+│   
 └── README.md
 10. About this project
 Built as a portfolio project to show how audit and compliance reporting work can be automated with AI-assisted development. I define the reporting requirement from my experience in risk-based audit and compliance engagements (BFSI, Insurance and Healthcare clients), and the tool was built with AI assistance and checked against that requirement.
