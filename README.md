@@ -1,4 +1,3 @@
-markdown
 # Audit Committee Dashboard Generator
 
 An interactive dashboard for audit committee reporting: issue ratings, aging, owner-wise closure and repeat findings. Drop in an Excel or CSV export and get a stakeholder-ready dashboard in seconds, with no server, no install and no data upload.
@@ -27,7 +26,7 @@ Audit-aware by design: risk ratings are ordered Critical to Low and coloured con
 
 ## 3. Try it in 60 seconds
 
-1. Open the tool: https://caswetamohanty.github.io/Audit_committee_dashboard/Audit%20_committee%20_dashboard.HTML
+1. Open the tool: **[Open the live dashboard](https://caswetamohanty.github.io/Audit_committee_dashboard/Audit%20_committee%20_dashboard.HTML)**
 2. Upload `Demo_data/audit_issues_sample.csv` (or the .xlsx). Download it from the Demo_data folder of this repository first.
 3. You should see:
 
@@ -50,8 +49,8 @@ Everything in `Demo_data/` is fictional and generated for demonstration. No real
 
 | File | Contents |
 |---|---|
-| audit_issues_sample.csv | 60 synthetic audit issues: ID, process, description, risk rating, status, dates, owner (role only), days open, repeat-finding flag |
-| audit_issues_sample.xlsx | Same issues on sheet Audit_Issues, plus 22 control-test results on Control_Test_Results |
+| audit_issue_sample.csv | 60 synthetic audit issues: ID, process, description, risk rating, status, dates, owner (role only), days open, repeat-finding flag |
+| audit_issue_sample.xlsx | Same issues on sheet Audit_Issues, plus 22 control-test results on Control_Test_Results |
 
 Processes covered: Procure to Pay, Order to Cash, Hire to Retire, Fixed Assets, Financial Close, IT General Controls, Inventory, Treasury.
 
@@ -63,7 +62,7 @@ Processes covered: Procure to Pay, Order to Cash, Hire to Retire, Fixed Assets, 
 - **Charts:** Chart.js, with dark mode support and keyboard-accessible controls.
 - **Export:** SheetJS for Excel, PptxGenJS (loaded on demand) for PowerPoint.
 
-Full detail, including every detection rule: `Docs/HOW_IT_WORKS.md`
+Full detail, including every detection rule: `Docs/How_it_works.md`
 
 ## 6. Privacy
 
@@ -89,9 +88,9 @@ HTML, CSS and vanilla JavaScript in one file, with SheetJS 0.18.5, Chart.js 4.4.
 ├── Audit _committee _dashboard.HTML   # the tool
 ├── Demo_data/
 │   ├── audit_issues_sample.csv        # synthetic audit issue log
-│   └── audit_issues_sample.xlsx       # same data + control test sheet
+│   └── audit_issue_sample.xlsx       # same data + control test sheet
 ├── Docs/
-│   └── HOW_IT_WORKS.md                # detection and aggregation rules
+│   └── How_it_works.md                # detection and aggregation rules
 ├── Screenshots/
 └── README.md
 ```
@@ -100,4 +99,4 @@ HTML, CSS and vanilla JavaScript in one file, with SheetJS 0.18.5, Chart.js 4.4.
 
 Built as a portfolio project to show how audit and compliance reporting work can be automated with AI-assisted development. I define the reporting requirement from my experience in risk-based audit and compliance engagements (BFSI, Insurance and Healthcare clients), and the tool was built with AI assistance and checked against that requirement.
 
-A project by CA Sweta Mohanty | [LinkedIn](https://www.linkedin.com/in/caswetamohanty) |  [Email](caswetamohanty@gmail.com)
+A project by CA Sweta Mohanty | [LinkedIn](https://www.linkedin.com/in/caswetamohanty/) | [caswetamohanty@gmail.com](mailto:caswetamohanty@gmail.com)
