@@ -2,7 +2,7 @@
 
 An interactive dashboard for audit committee reporting: issue ratings, aging, owner-wise closure and repeat findings. Drop in an Excel or CSV export and get a stakeholder-ready dashboard in seconds, with no backend, no install and no data upload.
 
-**[Open the live tool above]**
+**[Open the live dashboard](https://caswetamohanty.github.io/Audit_committee_dashboard/Audit%20_committee%20_dashboard.HTML)**
 
 A single-file web tool that reads an audit issue log (or any tabular export), works out what each column means, and builds KPI cards and charts automatically. Charts can then be edited, added or removed, and the result exported to Excel or PowerPoint for the audit committee pack.
 
@@ -26,7 +26,7 @@ Audit-aware by design: risk ratings are ordered Critical to Low and coloured con
 
 ## 3. Try it in 60 seconds
 
-1. Open the tool: **[Open the live dashboard](https://caswetamohanty.github.io/Audit_committee_dashboard/Audit%20_committee%20_dashboard.HTML)**
+1. Open the tool above:
 2. Upload `Demo_data/audit_issues_sample.csv` (or the .xlsx). Download it from the Demo_data folder of this repository first.
 3. You should see:
 
