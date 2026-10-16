@@ -2,7 +2,7 @@
 
 An interactive dashboard for audit committee reporting: issue ratings, aging, owner-wise closure and repeat findings. Drop in an Excel or CSV export and get a stakeholder-ready dashboard in seconds, with no backend, no install and no data upload.
 
-**[Open the live dashboard](https://caswetamohanty.github.io/Audit_committee_dashboard/Audit%20_committee%20_dashboard.HTML)**
+**[Open the live dashboard]https://caswetamohanty.github.io/Audit_committee_dashboard/Audit_committee_dashboard.HTML**
 
 A single-file web tool that reads an audit issue log (or any tabular export), works out what each column means, and builds KPI cards and charts automatically. Charts can then be edited, added or removed, and the result exported to Excel or PowerPoint for the audit committee pack.
 
@@ -88,7 +88,7 @@ HTML, CSS and vanilla JavaScript in one file, with SheetJS 0.18.5, Chart.js 4.4.
 ├── Audit_committee_dashboard.HTML   # the tool
 ├── Demo_data/
 │   ├── audit_issues_sample.csv        # synthetic audit issue log
-│   └── audit_issue_sample.xlsx       # same data + control test sheet
+│   └── audit_issues_sample.xlsx       # same data + control test sheet
 ├── Docs/
 │   └── How_it_works.md                # detection and aggregation rules
 ├── Screenshots/
